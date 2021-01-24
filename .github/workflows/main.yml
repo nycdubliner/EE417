@@ -31,9 +31,6 @@ jobs:
       - name: Make JSON from CSV
         run: python3 csv2json.py
 
-      - name: Add LAST_UPDATED
-        run: sed "s/LAST_UPDATED/$(date)/g" index.html > index.html
-      
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:

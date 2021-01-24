@@ -28,7 +28,12 @@
 #description a:visited {
     color: white;
 }
-
 #credit {
     font-size: small;
+}
+
+#outer {
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
