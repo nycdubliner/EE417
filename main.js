@@ -58,7 +58,7 @@ function renderTeams(data) {
   document.getElementById("teams").innerHTML = text;
 }
 
-fetch('/nba_elo.json')
+fetch('nba_elo.json')
 .then(response => response.json())
 .then(data => renderTeams(data));
 
