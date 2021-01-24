@@ -2,9 +2,11 @@
 
 name: Update Games
 
-on:
+on:  
+  push:
+  pull_request:
   schedule:
-  - cron: "0 6 * *"
+    - cron: '0 0 * * *'  # every day at midnight
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
