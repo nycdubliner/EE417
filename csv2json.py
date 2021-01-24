@@ -6,7 +6,7 @@ def main():
 
     # Decide the two file paths according to your 
     # computer system 
-    csvFilePath = r'nba_elo.csv'
+    csvFilePath = r'nba_elo_latest.csv'
     jsonFilePath = r'nba_elo.json'
 
     # Call the make_json function 
