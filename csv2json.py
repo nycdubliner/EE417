@@ -23,6 +23,14 @@ def make_json(csvFilePath, jsonFilePath):
         csv_reader = csv.DictReader(csv_file)
         for i in csv_reader:
             data.append(i)
+
+    # strip all but this year's results. 
+    out = []
+    for game in data:
+        if '2021' in game['date']:
+            out.append(game)
+    data = out
+    
     with open(jsonFilePath, 'w') as json_file:
         json_file.write(json.dumps(data, indent=4))
 
