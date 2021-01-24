@@ -1,27 +1,31 @@
 #banner{
     background-color: #17408B;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold ;
     text-align: center;
     padding: 10px;
+    max-width: 500px;
 }
 
 #teams{
     background-color:white;
-    font-family: sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     text-align: center;
     line-height: 1.5em;
     padding: 30px;
+    max-width: 500px;
+
 
 }
 
 #description {
     background-color: #C9082A;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: small;
     padding: 10px;
+    max-width: 500px;
 }
 #description a:link {
     color: white;
