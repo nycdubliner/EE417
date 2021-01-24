@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="nba.css">
+<script type='text/javascript' src='main.js'></script>
 <html>
   <head>
     <meta charset="utf-8">
@@ -15,37 +16,5 @@
       <br><br>
       For these purposes a game is considered 'close' if it ends within 10 points.
     </div>
-    <script>
-      function renderTeams(data) {
-        var closeGames = []
-        var text = ""
-        var i
-        for (i = (data.length - 1); i >=0; i--) {
-          var game = data[i]
-          // Was the winning margin less than 10? 
-          // Greater than 0 confirms the game took place.
-          if ((Math.abs(game['score1'] - game['score2']) < 10) &&
-             (Math.abs(game['score1'] - game['score2']) > 0)) {
-               closeGames.push(game)
-          }          
-        }
-        // Get most recent game day
-        gameDay = closeGames[0]['date']
-        // Format the Output.
-        for (j = 0; j < closeGames.length; j++) {
-          var game = closeGames[j]
-          if (game['date'] == gameDay) {
-            text += game['team1'] + "@" +
-                    game['team2'] + " " +
-                    "<br>";
-          }
-        }
-        document.getElementById("teams").innerHTML = text;
-      }
-
-      fetch('/nba_elo.json')
-      .then(response => response.json())
-      .then(data => renderTeams(data));
-    </script>
   </body>
 </html>
