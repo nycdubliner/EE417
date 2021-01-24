@@ -32,7 +32,7 @@ jobs:
         run: python3 csv2json.py
 
       - name: Add LAST_UPDATED
-        run: sed -i 's/LAST_UPDATED/`date`/g' index.html
+        run: sed -i "s/LAST_UPDATED/$(date)/g" index.html
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
