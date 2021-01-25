@@ -1,0 +1,39 @@
+#banner{
+    background-color: #17408B;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold ;
+    text-align: center;
+    padding: 10px;
+}
+
+#teams{
+    background-color:white;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 30px;
+}
+
+#description {
+    background-color: #C9082A;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: small;
+    padding: 10px;
+}
+#description a:link {
+    color: white;
+}
+#description a:visited {
+    color: white;
+}
+#credit {
+    font-size: small;
+}
+
+#outer {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
