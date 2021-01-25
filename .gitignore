@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# nba data files
+nba_elo.json
+nba_elo_latest.csv

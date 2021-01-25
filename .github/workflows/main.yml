@@ -6,7 +6,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '0 0 * * *'  # every day at midnight
+    - cron: '0 8 * * *'  # every day at 8am
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
