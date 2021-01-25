@@ -27,6 +27,10 @@ jobs:
       - name: Get data 
         run: wget https://projects.fivethirtyeight.com/nba-model/nba_elo_latest.csv
 
+      # Check status of new file
+      - name: Git Diff
+      - run: git diff
+
       # Runs a set of commands using the runners shell
       - name: Make JSON from CSV
         run: python3 csv2json.py
