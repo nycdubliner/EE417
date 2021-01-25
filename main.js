@@ -46,6 +46,7 @@ function renderTeams(data) {
   }
   // Get most recent game day
   gameDay = closeGames[0]['date']
+  text += gameDay + "<br>"
   // Format the Output.
   for (j = 0; j < closeGames.length; j++) {
     var game = closeGames[j]
