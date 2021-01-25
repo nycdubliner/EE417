@@ -1,3 +1,9 @@
+/*
+*{
+    border:1px solid orange;
+}
+*/
+
 #banner{
     background-color: #17408B;
     color: white;
@@ -13,6 +19,12 @@
     text-align: center;
     line-height: 1.5em;
     padding: 30px;
+}
+
+#date{
+    background-color:white;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
 
 #description {
