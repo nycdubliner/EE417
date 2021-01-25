@@ -20,20 +20,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         
-      - name: Remove old data
-        run: rm nba_elo.json nba_elo_latest.csv
-
-      # Runs a single command using the runners shell
       - name: Get data 
         run: wget https://projects.fivethirtyeight.com/nba-model/nba_elo_latest.csv
 
       # Check status of new file
-      - name: Git Diff
-        run: git diff
+      - name: show nba_elo.json
+        run: wc nba_elo_latest.csv
 
       # Runs a set of commands using the runners shell
       - name: Make JSON from CSV
         run: python3 csv2json.py
+
+      # Check output
+      - name: show nba_elo.json
+        run: wc nba_elo.json
 
       # Check status of new file
       - name: Git Diff 2
