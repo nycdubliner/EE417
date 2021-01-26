@@ -65,11 +65,6 @@ function renderTeams(data,offset) {
   document.getElementById("teams").innerHTML = text;
   setDate(gameDay)
 
-  function increase() {
-    var x = parseInt(document.getElementById("year").innerHTML)
-    document.getElementById("year").innerHTML = x + 1
-  }
-  
 }
 
 function setDate(text) {
@@ -84,6 +79,11 @@ function decrease() {
   .then(data => renderTeams(data, offset));
 }
 
+function increase() {
+  var x = parseInt(document.getElementById("year").innerHTML)
+  document.getElementById("year").innerHTML = x + 1
+}
+  
 fetch('nba_elo.json')
   .then(response => response.json())
   .then(data => renderTeams(data, offset));
