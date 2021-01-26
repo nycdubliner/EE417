@@ -19,6 +19,7 @@
     text-align: center;
     line-height: 1.5em;
     padding: 30px;
+    min-height: 200px
 }
 
 #date{
